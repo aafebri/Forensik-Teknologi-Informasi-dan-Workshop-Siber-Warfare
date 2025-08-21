@@ -62,10 +62,4 @@
 
 ---
 
-# 🔑 **Kesimpulan**
-- **UU ITE** → payung hukum utama untuk aktivitas siber.  
-- **UU PDP** → perlindungan privasi dan data pribadi.  
-- **PP 71/2019 & regulasi BSSN** → aturan teknis sistem elektronik.  
-- **UU Pertahanan & KUHP baru** → penguatan keamanan dan aspek pidana di dunia maya.  
 
-👉 Jadi, kerangka hukum siber Indonesia membentuk **ekosistem perlindungan digital**: mulai dari transaksi elektronik, data pribadi, keamanan siber, hingga pertahanan negara.  
