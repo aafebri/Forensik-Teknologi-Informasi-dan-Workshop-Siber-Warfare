@@ -1,117 +1,54 @@
-# 📡 Network Protocol - Dokumentasi Lengkap
+# Rangkuman Lengkap Network Protocol
 
-Repositori ini berisi dokumentasi lengkap tentang **Network Protocol**, arsitektur komunikasi jaringan, serta penjelasan detail dari hardware, OS, proses komunikasi, OSI layer, TCP/IP, hingga penggunaan Wireshark untuk analisis jaringan.  
+## Pengertian Network Protocol
 
----
+*Network Protocol* adalah seperangkat aturan yang mengatur bagaimana data dikirim, diterima, dan diproses di dalam jaringan komputer. Protokol ini memastikan perangkat keras dan lunak dari produsen yang berbeda bisa berkomunikasi satu sama lain dengan standar yang sama.
 
-## 1. 🌐 Network Protocol
-**Network Protocol** adalah seperangkat aturan yang mengatur bagaimana data dikirim, diterima, dan diproses di dalam jaringan komputer.  
-Contoh: **TCP/IP, HTTP, FTP, DNS, DHCP, SMTP, POP3, IMAP**.  
+## Model Lapisan Jaringan (Network Layers)
 
-Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar yang sama.
-![OSI vs TCP/IP](https://edavos.com/wp-content/uploads/2024/06/Jenis-Jenis-Protokol-Jaringan-yang-Paling-Populer-1024x576.webp)
+Untuk memahami cara kerja protokol, penting untuk memahami model lapisan (layer) jaringan. Dua model yang paling umum adalah *TCP/IP Model* dan *OSI Model*.
 
----
+### 1. TCP/IP Model
 
-## 2. ⚙️ Hardware, Kernel, OS, Apps, User, CPU, Process
-- **Hardware** → Perangkat fisik (CPU, RAM, NIC, router, switch).
-- **Kernel** → Bagian inti OS, menghubungkan hardware dengan software.
-- **OS (Operating System)** → Sistem pengatur komputer (Linux, Windows, macOS).
-- **Apps** → Aplikasi yang digunakan user (browser, WhatsApp, game, dll).
-- **User** → Orang yang menggunakan sistem.
-- **CPU - Process** → CPU mengeksekusi instruksi aplikasi dalam bentuk proses.
+Model TCP/IP (Transmission Control Protocol/Internet Protocol) adalah model standar yang digunakan saat ini. Model ini terdiri dari 4 lapisan:
 
-![OSI vs TCP/IP](images/gambar2.png)
----
+* *Application Layer:* Lapisan teratas yang berinteraksi langsung dengan aplikasi pengguna.
+    * *Contoh Protokol:* HTTP, FTP, SMTP, DNS, dan Telnet.
+* *Transport Layer:* Bertanggung jawab untuk pengiriman data dari satu proses ke proses lain.
+    * *Protokol Utama:* TCP (Transmission Control Protocol) untuk pengiriman yang andal, dan UDP (User Datagram Protocol) untuk pengiriman yang cepat.
+* *Internet Layer:* Mengurus pengalamatan (IP Addressing) dan routing paket data.
+    * *Protokol Utama:* IP (Internet Protocol).
+* *Network Access Layer:* Lapisan terbawah yang menangani media fisik dan komunikasi data di dalam jaringan lokal.
+    * *Contoh Protokol:* Ethernet (kabel) dan Wi-Fi (nirkabel).
 
-## 3. 🚀 Aplikasi, Proses, dan Komunikasi
-- **Apps yang sedang dieksekusi** → Menjadi **process** di CPU.
-- **Komunikasi antar process** → Bisa melalui **Inter-Process Communication (IPC)**.
-- **Remote Procedure Call (RPC)** → Memungkinkan satu program memanggil fungsi di komputer lain.
-- **Network TCP/IP** → Digunakan untuk komunikasi data antar komputer.
-![OSI vs TCP/IP](images/gambar3.png)
----
+Berikut adalah gambaran visual dari TCP/IP Model:
 
-## 4. 📑 ISO-OSI Model
-Model **OSI (Open Systems Interconnection)** memiliki **7 layer**:
+![TCP/IP Model](https://i.imgur.com/uR29w2M.png)
 
-1. **Physical** → Transmisi bit (kabel, fiber, sinyal).
-2. **Data Link** → Pengalamatan fisik (MAC Address, Ethernet).
-3. **Network** → Routing & IP Address.
-4. **Transport** → Segmentasi data (TCP/UDP).
-5. **Session** → Mengatur koneksi antar aplikasi.
-6. **Presentation** → Enkripsi, kompresi, format data.
-7. **Application** → Layanan aplikasi (HTTP, FTP, DNS).
-![OSI vs TCP/IP](images/gambar4.png)
----
+### 2. OSI Model
 
-## 5. 🌍 Internet & Alur Kerjanya
-Alur sederhana Internet:
-1. User membuka aplikasi (misalnya browser).
-2. Aplikasi membuat permintaan ke server (HTTP/HTTPS).
-3. DNS menerjemahkan domain → IP Address.
-4. Data dikirim via TCP/IP melewati router, switch, kabel, dll.
-5. Server merespon → data kembali ke user.
-![OSI vs TCP/IP](images/gambar5.png)
----
+Model OSI (Open Systems Interconnection) adalah model konseptual yang lebih rinci, terdiri dari 7 lapisan. Meskipun tidak banyak digunakan dalam implementasi praktis seperti TCP/IP, model ini sangat penting untuk pendidikan dan pemahaman arsitektur jaringan.
 
-## 6. 📦 Aturan TCP/IP
-- **TCP (Transmission Control Protocol)** → Handshake, reliabilitas, segmentasi data.
-- **IP (Internet Protocol)** → Pengalamatan & routing.
-- Kombinasi ini membentuk **Internet Protocol Suite**.
-![OSI vs TCP/IP](images/gambar6.png)
----
+* *Lapisan 7: Application*
+* *Lapisan 6: Presentation*
+* *Lapisan 5: Session*
+* *Lapisan 4: Transport*
+* *Lapisan 3: Network*
+* *Lapisan 2: Data Link*
+* *Lapisan 1: Physical*
 
-## 7. 👥 Client dan User dalam OSI Layer
-- **Application** → HTTP, FTP, DNS.
-- **Presentation** → SSL/TLS, enkripsi.
-- **Session** → Socket, sesi komunikasi.
-- **Transport** → TCP/UDP.
-- **Network** → IP.
-- **Data Link** → Ethernet, MAC.
-- **Physical** → Kabel, wireless.
-![OSI vs TCP/IP](images/gambar7.png)
+Berikut adalah perbandingan visual antara OSI Model dan TCP/IP Model:
 
----
+![OSI vs TCP/IP Model](https://i.imgur.com/gK1q2yY.png)
 
-## 8. 📡 Media Komunikasi & Pensinyalan
-1. **Cable (UTP/STP)** → Murah, mudah dipasang.
-2. **Fiber Optic** → Cepat, tahan interferensi.
-3. **Radio Frequency (Wireless/Wi-Fi)** → Praktis, tapi rawan gangguan.
-![OSI vs TCP/IP](images/gambar8.gif)
----
+### Perbedaan TCP dan UDP
 
-## 9. 🔍 Wireshark & Testing
-**Wireshark** adalah tool untuk menganalisis paket data jaringan.  
+TCP dan UDP adalah dua protokol utama di lapisan Transport. Memahami perbedaannya sangat penting:
 
-### Cara kerja:
-1. Menangkap paket (capture) dari interface jaringan.
-2. Menampilkan detail tiap paket (src IP, dst IP, protokol, payload).
-3. Memungkinkan filter untuk analisis spesifik (contoh: hanya DNS atau HTTP).
+| Karakteristik    | TCP (Transmission Control Protocol)            | UDP (User Datagram Protocol)                       |
+| ---------------- | ---------------------------------------------- | -------------------------------------------------- |
+| *Keandalan* | *Reliable* (ada konfirmasi pengiriman)       | *Unreliable* (tanpa konfirmasi)                    |
+| *Kecepatan* | Lebih lambat (overhead tinggi)                 | Lebih cepat (overhead rendah)                      |
+| *Penggunaan* | Transfer file, email, browsing web (HTTP/S)    | Streaming video, game online, panggilan VoIP        |
 
-### Contoh Capture DNS:
-- Gunakan file trace seperti `dns-imp-pacing.gz`.
-- Buka di Wireshark → gunakan filter:
-- Akan terlihat request & response DNS (domain → IP).
-![OSI vs TCP/IP](images/gambar9.png)
----
-
-
-## 10. 📊 Diagram OSI vs TCP/IP
-![OSI vs TCP/IP](images/osi_vs_tcpip.png)
-
-## 11. 🌍 Alur Kerja Internet (HTTP/HTTPS)
-![Internet Flow](images/internet_flow.png)
-
-## 📌 Kesimpulan
-- **Network Protocol** = aturan komunikasi antar perangkat.  
-- **OSI & TCP/IP** = model komunikasi data.  
-- **Wireshark** = alat analisis paket.  
-- **Media komunikasi** → kabel, fiber, radio.  
-- Semua ini bekerja bersama agar Internet bisa berjalan sebagaimana mestinya.  
-
----
-
-✍️ Dibuat Oleh : Marthen Frikaldo Antaribaba
-
-Untuk dokumentasi belajar & riset..  
+Ini adalah rangkuman yang ringkas namun lengkap untuk tugas Anda. Selamat mengerjakan!  
