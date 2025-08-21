@@ -73,48 +73,9 @@ Alur sederhana Internet:
 - **Network** → IP.
 - **Data Link** → Ethernet, MAC.
 - **Physical** → Kabel, wireless.
-![OSI vs TCP/IP](images/gambar7.png)
+![OSI vs TCP/IP](https://ahmadharisandi7.wordpress.com/wp-content/uploads/2018/04/basics_osimodel.jpg?w=620)
 
 ---
 
-## 8. 📡 Media Komunikasi & Pensinyalan
-1. **Cable (UTP/STP)** → Murah, mudah dipasang.
-2. **Fiber Optic** → Cepat, tahan interferensi.
-3. **Radio Frequency (Wireless/Wi-Fi)** → Praktis, tapi rawan gangguan.
-![OSI vs TCP/IP](images/gambar8.gif)
----
-
-## 9. 🔍 Wireshark & Testing
-**Wireshark** adalah tool untuk menganalisis paket data jaringan.  
-
-### Cara kerja:
-1. Menangkap paket (capture) dari interface jaringan.
-2. Menampilkan detail tiap paket (src IP, dst IP, protokol, payload).
-3. Memungkinkan filter untuk analisis spesifik (contoh: hanya DNS atau HTTP).
-
-### Contoh Capture DNS:
-- Gunakan file trace seperti `dns-imp-pacing.gz`.
-- Buka di Wireshark → gunakan filter:
-- Akan terlihat request & response DNS (domain → IP).
-![OSI vs TCP/IP](images/gambar9.png)
----
-
-
-## 10. 📊 Diagram OSI vs TCP/IP
-![OSI vs TCP/IP](images/osi_vs_tcpip.png)
-
-## 11. 🌍 Alur Kerja Internet (HTTP/HTTPS)
-![Internet Flow](images/internet_flow.png)
-
-## 📌 Kesimpulan
-- **Network Protocol** = aturan komunikasi antar perangkat.  
-- **OSI & TCP/IP** = model komunikasi data.  
-- **Wireshark** = alat analisis paket.  
-- **Media komunikasi** → kabel, fiber, radio.  
-- Semua ini bekerja bersama agar Internet bisa berjalan sebagaimana mestinya.  
-
----
-
-✍️ Dibuat Oleh : Marthen Frikaldo Antaribaba
-
-Untuk dokumentasi belajar & riset..  
+✍️ Dibuat Oleh : Moch.Febrianto
+  
