@@ -29,7 +29,7 @@ Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar
 - **Komunikasi antar process** → Bisa melalui **Inter-Process Communication (IPC)**.
 - **Remote Procedure Call (RPC)** → Memungkinkan satu program memanggil fungsi di komputer lain.
 - **Network TCP/IP** → Digunakan untuk komunikasi data antar komputer.
-![OSI vs TCP/IP](images/gambar3.png)
+![OSI vs TCP/IP](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmKy0OTCjrTb-AiMjM4WeuPWJf71UFgdL6Tt2wL2-FgcRaXTF0Bc-cnBBWO2wdMP6EoI6lmeAQDqgX6Kwb_IoK4r6yaa25jH6Rj86KnHcBUF_EfhrNHQCKFlOvN-ao1r4PEsEU5zCzFYud/?imgmax=800)
 ---
 
 ## 4. 📑 ISO-OSI Model
