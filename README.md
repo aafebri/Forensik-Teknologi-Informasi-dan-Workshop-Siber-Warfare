@@ -9,7 +9,7 @@ Repositori ini berisi dokumentasi lengkap tentang **Network Protocol**, arsitekt
 Contoh: **TCP/IP, HTTP, FTP, DNS, DHCP, SMTP, POP3, IMAP**.  
 
 Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar yang sama.
-![OSI vs TCP/IP](https://www.google.com/imgres?q=gambar%20TCP%2FIP%20vs%20OSI&imgurl=https%3A%2F%2Fencryptinsights.com%2Fwp-content%2Fuploads%2F2024%2F08%2Ftcp-ip-model-vs-osi-model-comparison.png&imgrefurl=https%3A%2F%2Fencryptinsights.com%2Ftcp-ip-model-vs-osi-model%2F&docid=H7SjVITJasxT5M&tbnid=yw6gsQ0OYRsGqM&vet=12ahUKEwiLi86LhpuPAxXMzTgGHWCMLt4QM3oECB0QAA..i&w=1200&h=600&hcb=2&ved=2ahUKEwiLi86LhpuPAxXMzTgGHWCMLt4QM3oECB0QAA)
+![OSI vs TCP/IP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEmjoUy-0eH5WTvp83o8SfrfT5ipNG9R_4Pw&s)
 
 ---
 
