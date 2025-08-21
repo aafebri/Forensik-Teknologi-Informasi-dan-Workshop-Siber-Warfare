@@ -23,7 +23,7 @@ Model TCP/IP (Transmission Control Protocol/Internet Protocol) adalah model stan
 
 Berikut adalah gambaran visual dari TCP/IP Model:
 
-![Diagram TCP/IP Model](https://upload.wikimedia.org/wikipedia/commons/e/ec/TCP-IP_Model_-_en.img)
+![Diagram TCP/IP Model](https://upload.wikimedia.org/wikipedia/commons/e/ec/TCP-IP_Model_-_en.png)
 
 ### 2. OSI Model
 
@@ -47,8 +47,6 @@ TCP dan UDP adalah dua protokol utama di lapisan Transport. Memahami perbedaanny
 
 | Karakteristik    | TCP (Transmission Control Protocol)            | UDP (User Datagram Protocol)                       |
 | ---------------- | ---------------------------------------------- | -------------------------------------------------- |
-| *Keandalan* | *Reliable* (ada konfirmasi pengiriman)       | *Unreliable* (tanpa konfirmasi)                  |
+| *Keandalan* | *Reliable* (ada konfirmasi pengiriman)       | *Unreliable* (tanpa konfirmasi)                    |
 | *Kecepatan* | Lebih lambat (overhead tinggi)                 | Lebih cepat (overhead rendah)                      |
-| *Penggunaan* | Transfer file, email, browsing web (HTTP/S)    | Streaming video, game online, panggilan VoIP        |
-
-Ini adalah rangkuman yang ringkas namun lengkap untuk tugas Anda. Selamat mengerjakan! 
+| *Penggunaan* | Transfer file, email, browsing web (HTTP/S)    | Streaming video, game online, panggilan VoIP        | 
