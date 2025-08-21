@@ -42,7 +42,7 @@ Model **OSI (Open Systems Interconnection)** memiliki **7 layer**:
 5. **Session** → Mengatur koneksi antar aplikasi.
 6. **Presentation** → Enkripsi, kompresi, format data.
 7. **Application** → Layanan aplikasi (HTTP, FTP, DNS).
-![OSI vs TCP/IP](images/gambar4.png)
+![OSI vs TCP/IP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS1TP3V4wFW5lxkuEzW05kl5gg47ghEwC9SQ&s)
 ---
 
 ## 5. 🌍 Internet & Alur Kerjanya
