@@ -23,7 +23,7 @@ Model TCP/IP (Transmission Control Protocol/Internet Protocol) adalah model stan
 
 Berikut adalah gambaran visual dari TCP/IP Model:
 
-![Diagram TCP/IP Model](https://upload.wikimedia.org/wikipedia/commons/e/ec/TCP-IP_Model_-_en.png)
+![Diagram TCP/IP Model](https://upload.wikimedia.org/wikipedia/commons/e/ec/TCP-IP_Model_-_en.img)
 
 ### 2. OSI Model
 
