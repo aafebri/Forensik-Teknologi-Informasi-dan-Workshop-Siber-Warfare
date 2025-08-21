@@ -1,52 +1,117 @@
-# Rangkuman Lengkap Network Protocol
+# 📡 Network Protocol - Dokumentasi Lengkap
 
-## Pengertian Network Protocol
+Repositori ini berisi dokumentasi lengkap tentang **Network Protocol**, arsitektur komunikasi jaringan, serta penjelasan detail dari hardware, OS, proses komunikasi, OSI layer, TCP/IP, hingga penggunaan Wireshark untuk analisis jaringan.  
 
-*Network Protocol* adalah seperangkat aturan yang mengatur bagaimana data dikirim, diterima, dan diproses di dalam jaringan komputer. Protokol ini memastikan perangkat keras dan lunak dari produsen yang berbeda bisa berkomunikasi satu sama lain dengan standar yang sama.
+---
 
-## Model Lapisan Jaringan (Network Layers)
+## 1. 🌐 Network Protocol
+**Network Protocol** adalah seperangkat aturan yang mengatur bagaimana data dikirim, diterima, dan diproses di dalam jaringan komputer.  
+Contoh: **TCP/IP, HTTP, FTP, DNS, DHCP, SMTP, POP3, IMAP**.  
 
-Untuk memahami cara kerja protokol, penting untuk memahami model lapisan (layer) jaringan. Dua model yang paling umum adalah *TCP/IP Model* dan *OSI Model*.
+Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar yang sama.
+![OSI vs TCP/IP](data:image/jpeg;base64,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)
 
-### 1. TCP/IP Model
+---
 
-Model TCP/IP (Transmission Control Protocol/Internet Protocol) adalah model standar yang digunakan saat ini. Model ini terdiri dari 4 lapisan:
+## 2. ⚙️ Hardware, Kernel, OS, Apps, User, CPU, Process
+- **Hardware** → Perangkat fisik (CPU, RAM, NIC, router, switch).
+- **Kernel** → Bagian inti OS, menghubungkan hardware dengan software.
+- **OS (Operating System)** → Sistem pengatur komputer (Linux, Windows, macOS).
+- **Apps** → Aplikasi yang digunakan user (browser, WhatsApp, game, dll).
+- **User** → Orang yang menggunakan sistem.
+- **CPU - Process** → CPU mengeksekusi instruksi aplikasi dalam bentuk proses.
 
-* *Application Layer:* Lapisan teratas yang berinteraksi langsung dengan aplikasi pengguna.
-    * *Contoh Protokol:* HTTP, FTP, SMTP, DNS, dan Telnet.
-* *Transport Layer:* Bertanggung jawab untuk pengiriman data dari satu proses ke proses lain.
-    * *Protokol Utama:* TCP (Transmission Control Protocol) untuk pengiriman yang andal, dan UDP (User Datagram Protocol) untuk pengiriman yang cepat.
-* *Internet Layer:* Mengurus pengalamatan (IP Addressing) dan routing paket data.
-    * *Protokol Utama:* IP (Internet Protocol).
-* *Network Access Layer:* Lapisan terbawah yang menangani media fisik dan komunikasi data di dalam jaringan lokal.
-    * *Contoh Protokol:* Ethernet (kabel) dan Wi-Fi (nirkabel).
+![OSI vs TCP/IP](images/gambar2.png)
+---
 
-Berikut adalah gambaran visual dari TCP/IP Model:
+## 3. 🚀 Aplikasi, Proses, dan Komunikasi
+- **Apps yang sedang dieksekusi** → Menjadi **process** di CPU.
+- **Komunikasi antar process** → Bisa melalui **Inter-Process Communication (IPC)**.
+- **Remote Procedure Call (RPC)** → Memungkinkan satu program memanggil fungsi di komputer lain.
+- **Network TCP/IP** → Digunakan untuk komunikasi data antar komputer.
+![OSI vs TCP/IP](images/gambar3.png)
+---
 
-![Diagram TCP/IP Model](https://upload.wikimedia.org/wikipedia/commons/e/ec/TCP-IP_Model_-_en.png)
+## 4. 📑 ISO-OSI Model
+Model **OSI (Open Systems Interconnection)** memiliki **7 layer**:
 
-### 2. OSI Model
+1. **Physical** → Transmisi bit (kabel, fiber, sinyal).
+2. **Data Link** → Pengalamatan fisik (MAC Address, Ethernet).
+3. **Network** → Routing & IP Address.
+4. **Transport** → Segmentasi data (TCP/UDP).
+5. **Session** → Mengatur koneksi antar aplikasi.
+6. **Presentation** → Enkripsi, kompresi, format data.
+7. **Application** → Layanan aplikasi (HTTP, FTP, DNS).
+![OSI vs TCP/IP](images/gambar4.png)
+---
 
-Model OSI (Open Systems Interconnection) adalah model konseptual yang lebih rinci, terdiri dari 7 lapisan. Meskipun tidak banyak digunakan dalam implementasi praktis seperti TCP/IP, model ini sangat penting untuk pendidikan dan pemahaman arsitektur jaringan.
+## 5. 🌍 Internet & Alur Kerjanya
+Alur sederhana Internet:
+1. User membuka aplikasi (misalnya browser).
+2. Aplikasi membuat permintaan ke server (HTTP/HTTPS).
+3. DNS menerjemahkan domain → IP Address.
+4. Data dikirim via TCP/IP melewati router, switch, kabel, dll.
+5. Server merespon → data kembali ke user.
+![OSI vs TCP/IP](images/gambar5.png)
+---
 
-* *Lapisan 7: Application*
-* *Lapisan 6: Presentation*
-* *Lapisan 5: Session*
-* *Lapisan 4: Transport*
-* *Lapisan 3: Network*
-* *Lapisan 2: Data Link*
-* *Lapisan 1: Physical*
+## 6. 📦 Aturan TCP/IP
+- **TCP (Transmission Control Protocol)** → Handshake, reliabilitas, segmentasi data.
+- **IP (Internet Protocol)** → Pengalamatan & routing.
+- Kombinasi ini membentuk **Internet Protocol Suite**.
+![OSI vs TCP/IP](images/gambar6.png)
+---
 
-Berikut adalah perbandingan visual antara OSI Model dan TCP/IP Model:
+## 7. 👥 Client dan User dalam OSI Layer
+- **Application** → HTTP, FTP, DNS.
+- **Presentation** → SSL/TLS, enkripsi.
+- **Session** → Socket, sesi komunikasi.
+- **Transport** → TCP/UDP.
+- **Network** → IP.
+- **Data Link** → Ethernet, MAC.
+- **Physical** → Kabel, wireless.
+![OSI vs TCP/IP](images/gambar7.png)
 
-![Perbandingan OSI dan TCP/IP Model](https://upload.wikimedia.org/wikipedia/commons/e/e5/Comparison_of_OSI_and_TCP-IP_Models.png)
+---
 
-### Perbedaan TCP dan UDP
+## 8. 📡 Media Komunikasi & Pensinyalan
+1. **Cable (UTP/STP)** → Murah, mudah dipasang.
+2. **Fiber Optic** → Cepat, tahan interferensi.
+3. **Radio Frequency (Wireless/Wi-Fi)** → Praktis, tapi rawan gangguan.
+![OSI vs TCP/IP](images/gambar8.gif)
+---
 
-TCP dan UDP adalah dua protokol utama di lapisan Transport. Memahami perbedaannya sangat penting:
+## 9. 🔍 Wireshark & Testing
+**Wireshark** adalah tool untuk menganalisis paket data jaringan.  
 
-| Karakteristik    | TCP (Transmission Control Protocol)            | UDP (User Datagram Protocol)                       |
-| ---------------- | ---------------------------------------------- | -------------------------------------------------- |
-| *Keandalan* | *Reliable* (ada konfirmasi pengiriman)       | *Unreliable* (tanpa konfirmasi)                    |
-| *Kecepatan* | Lebih lambat (overhead tinggi)                 | Lebih cepat (overhead rendah)                      |
-| *Penggunaan* | Transfer file, email, browsing web (HTTP/S)    | Streaming video, game online, panggilan VoIP        | 
+### Cara kerja:
+1. Menangkap paket (capture) dari interface jaringan.
+2. Menampilkan detail tiap paket (src IP, dst IP, protokol, payload).
+3. Memungkinkan filter untuk analisis spesifik (contoh: hanya DNS atau HTTP).
+
+### Contoh Capture DNS:
+- Gunakan file trace seperti `dns-imp-pacing.gz`.
+- Buka di Wireshark → gunakan filter:
+- Akan terlihat request & response DNS (domain → IP).
+![OSI vs TCP/IP](images/gambar9.png)
+---
+
+
+## 10. 📊 Diagram OSI vs TCP/IP
+![OSI vs TCP/IP](images/osi_vs_tcpip.png)
+
+## 11. 🌍 Alur Kerja Internet (HTTP/HTTPS)
+![Internet Flow](images/internet_flow.png)
+
+## 📌 Kesimpulan
+- **Network Protocol** = aturan komunikasi antar perangkat.  
+- **OSI & TCP/IP** = model komunikasi data.  
+- **Wireshark** = alat analisis paket.  
+- **Media komunikasi** → kabel, fiber, radio.  
+- Semua ini bekerja bersama agar Internet bisa berjalan sebagaimana mestinya.  
+
+---
+
+✍️ Dibuat Oleh : Marthen Frikaldo Antaribaba
+
+Untuk dokumentasi belajar & riset..  
