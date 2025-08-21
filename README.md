@@ -1,10 +1,10 @@
-# 📡 Network Protocol - Dokumentasi Lengkap
+#  Rangkuman Network Protocol 
 
 Repositori ini berisi dokumentasi lengkap tentang **Network Protocol**, arsitektur komunikasi jaringan, serta penjelasan detail dari hardware, OS, proses komunikasi, OSI layer, TCP/IP, hingga penggunaan Wireshark untuk analisis jaringan.  
 
 ---
 
-## 1. 🌐 Network Protocol
+## 1.  Network Protocol
 **Network Protocol** adalah seperangkat aturan yang mengatur bagaimana data dikirim, diterima, dan diproses di dalam jaringan komputer.  
 Contoh: **TCP/IP, HTTP, FTP, DNS, DHCP, SMTP, POP3, IMAP**.  
 
@@ -13,7 +13,7 @@ Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar
 
 ---
 
-## 2. ⚙️ Hardware, Kernel, OS, Apps, User, CPU, Process
+## 2.  Hardware, Kernel, OS, Apps, User, CPU, Process
 - **Hardware** → Perangkat fisik (CPU, RAM, NIC, router, switch).
 - **Kernel** → Bagian inti OS, menghubungkan hardware dengan software.
 - **OS (Operating System)** → Sistem pengatur komputer (Linux, Windows, macOS).
@@ -24,7 +24,7 @@ Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar
 ![OSI vs TCP/IP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33GgWM0LS9AIz_ZVcVD9MtrtLLNAebZ1FfA&s)
 ---
 
-## 3. 🚀 Aplikasi, Proses, dan Komunikasi
+## 3.  Aplikasi, Proses, dan Komunikasi
 - **Apps yang sedang dieksekusi** → Menjadi **process** di CPU.
 - **Komunikasi antar process** → Bisa melalui **Inter-Process Communication (IPC)**.
 - **Remote Procedure Call (RPC)** → Memungkinkan satu program memanggil fungsi di komputer lain.
@@ -32,7 +32,7 @@ Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar
 ![OSI vs TCP/IP](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmKy0OTCjrTb-AiMjM4WeuPWJf71UFgdL6Tt2wL2-FgcRaXTF0Bc-cnBBWO2wdMP6EoI6lmeAQDqgX6Kwb_IoK4r6yaa25jH6Rj86KnHcBUF_EfhrNHQCKFlOvN-ao1r4PEsEU5zCzFYud/?imgmax=800)
 ---
 
-## 4. 📑 ISO-OSI Model
+## 4.  ISO-OSI Model
 Model **OSI (Open Systems Interconnection)** memiliki **7 layer**:
 
 1. **Physical** → Transmisi bit (kabel, fiber, sinyal).
@@ -46,7 +46,7 @@ Model **OSI (Open Systems Interconnection)** memiliki **7 layer**:
 ![OSI vs TCP/IP](https://harianprogrammer.wordpress.com/wp-content/uploads/2017/10/perbandingaaaaaaaaaaaaaaaaaaaaaan.jpg?w=297&h=313)
 ---
 
-## 5. 🌍 Internet & Alur Kerjanya
+## 5.  Internet 
 Alur sederhana Internet:
 1. User membuka aplikasi (misalnya browser).
 2. Aplikasi membuat permintaan ke server (HTTP/HTTPS).
@@ -57,7 +57,7 @@ Alur sederhana Internet:
 ![OSI vs TCP/IP](https://www.simplilearn.com/ice9/free_resources_article_thumb/How_does_internet_work_example.png)
 ---
 
-## 6. 📦 Aturan TCP/IP
+## 6.  TCP/IP
 - **TCP (Transmission Control Protocol)** → Handshake, reliabilitas, segmentasi data.
 - **IP (Internet Protocol)** → Pengalamatan & routing.
 - Kombinasi ini membentuk **Internet Protocol Suite**.
@@ -65,7 +65,7 @@ Alur sederhana Internet:
 ![OSI vs TCP/IP](https://media.licdn.com/dms/image/v2/D5612AQGeQqsklyk9gw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1715656095933?e=2147483647&v=beta&t=ITgQcXXUmVQISTWFS_4yhZA3oYxVMKcTaVqhu5swFHQ)
 ---
 
-## 7. 👥 Client dan User dalam OSI Layer
+## 7.  Client dan User OSI Layer
 - **Application** → HTTP, FTP, DNS.
 - **Presentation** → SSL/TLS, enkripsi.
 - **Session** → Socket, sesi komunikasi.
@@ -77,5 +77,5 @@ Alur sederhana Internet:
 
 ---
 
-✍️ Dibuat Oleh : Moch.Febrianto
+ Dibuat Oleh : Moch.Febrianto
   
