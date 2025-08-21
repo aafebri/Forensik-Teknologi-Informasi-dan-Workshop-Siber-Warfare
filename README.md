@@ -73,8 +73,8 @@ Alur sederhana Internet:
 - **Network** → IP.
 - **Data Link** → Ethernet, MAC.
 - **Physical** → Kabel, wireless.
+  
 ![OSI vs TCP/IP](https://ahmadharisandi7.wordpress.com/wp-content/uploads/2018/04/basics_osimodel.jpg?w=620)
-
 ---
 
  Dibuat Oleh : Moch.Febrianto
