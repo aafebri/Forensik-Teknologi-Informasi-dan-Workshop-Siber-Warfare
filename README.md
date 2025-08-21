@@ -52,7 +52,7 @@ Alur sederhana Internet:
 3. DNS menerjemahkan domain → IP Address.
 4. Data dikirim via TCP/IP melewati router, switch, kabel, dll.
 5. Server merespon → data kembali ke user.
-![OSI vs TCP/IP](images/gambar5.png)
+![OSI vs TCP/IP](https://cdn.menggunakan.id/wp-content/uploads/2024/02/main-qimg-698080dd7504254983167b1e56141fff-jpg.webp)
 ---
 
 ## 6. 📦 Aturan TCP/IP
