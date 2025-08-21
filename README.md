@@ -21,7 +21,7 @@ Protokol ini memastikan perangkat yang berbeda bisa berkomunikasi dengan standar
 - **User** → Orang yang menggunakan sistem.
 - **CPU - Process** → CPU mengeksekusi instruksi aplikasi dalam bentuk proses.
 
-![OSI vs TCP/IP](images/gambar2.png)
+![OSI vs TCP/IP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33GgWM0LS9AIz_ZVcVD9MtrtLLNAebZ1FfA&s)
 ---
 
 ## 3. 🚀 Aplikasi, Proses, dan Komunikasi
