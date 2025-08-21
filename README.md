@@ -61,6 +61,7 @@ Alur sederhana Internet:
 - **TCP (Transmission Control Protocol)** → Handshake, reliabilitas, segmentasi data.
 - **IP (Internet Protocol)** → Pengalamatan & routing.
 - Kombinasi ini membentuk **Internet Protocol Suite**.
+  
 ![OSI vs TCP/IP](https://media.licdn.com/dms/image/v2/D5612AQGeQqsklyk9gw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1715656095933?e=2147483647&v=beta&t=ITgQcXXUmVQISTWFS_4yhZA3oYxVMKcTaVqhu5swFHQ)
 ---
 
