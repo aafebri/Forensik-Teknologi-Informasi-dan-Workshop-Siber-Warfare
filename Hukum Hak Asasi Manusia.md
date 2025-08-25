@@ -98,4 +98,17 @@ Upaya perlindungan HAM di dunia siber membutuhkan peran bersama antara negara, m
 3. Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (PDP).  
 4. Perserikatan Bangsa-Bangsa, *Universal Declaration of Human Rights* (UDHR), 1948.  
 5. Komnas HAM RI – [https://www.komnasham.go.id](https://www.komnasham.go.id)  
-6. Kementerian Komunikasi dan Informatika RI – [https://www.kominfo.go.id](https://www.kominfo.go.id)  
+6. Kementerian Komunikasi dan Informatika RI – [https://www.kominfo.go.id](https://www.kominfo.go.id)
+
+--
+
+<div align="center" style="margin-top: 30px; font-size: 0.9rem; color: #555;">
+
+**Dibuat oleh:**  
+**Sertu Mar Moch.Febrianto.**  
+**Pratu Inf Amnul Qadafi.**  
+**Pratu Czi Alfiyan.**  
+
+<i>Agustus 2025</i>
+
+</div>
