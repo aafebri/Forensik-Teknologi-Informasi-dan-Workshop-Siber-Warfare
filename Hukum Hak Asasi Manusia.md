@@ -80,12 +80,22 @@ Tidak boleh mengandung:
 
 ---
 
-## 6. Kesimpulan  
-Hak privasi dan kebebasan berpendapat merupakan bagian penting dari HAM yang harus dijaga di era digital.  
+---
 
-➡️ Perlindungan HAM di dunia siber adalah **tanggung jawab bersama**:  
-- Negara  
-- Masyarakat  
-- Individu  
+## Kesimpulan  
+Hak privasi dan kebebasan berpendapat adalah dua aspek penting dari HAM yang semakin relevan di era digital.  
+Perlindungan keduanya harus berjalan seimbang:  
+- **Privasi** melindungi individu dari penyalahgunaan data dan pelanggaran ruang pribadi.  
+- **Kebebasan berpendapat** menjamin hak warga untuk berekspresi, namun tetap dibatasi agar tidak melanggar hak orang lain atau membahayakan keamanan.  
 
-Perlindungan harus tetap menjaga ketertiban dan menghormati hak orang lain.  
+Upaya perlindungan HAM di dunia siber membutuhkan peran bersama antara negara, masyarakat, dan individu, dengan dukungan regulasi, literasi digital, serta tanggung jawab platform digital.  
+
+---
+
+## Referensi  
+1. Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.  
+2. Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (ITE), sebagaimana telah diubah dengan UU No. 19 Tahun 2016.  
+3. Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (PDP).  
+4. Perserikatan Bangsa-Bangsa, *Universal Declaration of Human Rights* (UDHR), 1948.  
+5. Komnas HAM RI – [https://www.komnasham.go.id](https://www.komnasham.go.id)  
+6. Kementerian Komunikasi dan Informatika RI – [https://www.kominfo.go.id](https://www.kominfo.go.id)  
