@@ -6,7 +6,6 @@ Tujuan utama adalah **mengenal static routing**, bagaimana dua jaringan berbeda 
 ---
 
 ## 🖼️ Topologi Jaringan
-
 - **PC1** terhubung ke Router1  
 - **Router1** terhubung ke Router2  
 - **Router2** terhubung ke PC2  
