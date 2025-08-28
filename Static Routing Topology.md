@@ -10,9 +10,7 @@ Tujuan utama adalah **mengenal static routing**, bagaimana dua jaringan berbeda 
 - **PC1** terhubung ke Router1  
 - **Router1** terhubung ke Router2  
 - **Router2** terhubung ke PC2  
-
 ![gambar2.png](images/gambar2.png)
-
 ---
 
 ## 📑 Spesifikasi Perangkat
@@ -28,25 +26,17 @@ Tujuan utama adalah **mengenal static routing**, bagaimana dua jaringan berbeda 
 
 ## 🔧 Konfigurasi IP Address
 
-### 💻 PC1
+### PC1
 - IP Address: `192.168.1.2`  
 - Subnet Mask: `255.255.255.0`  
 - Default Gateway: `192.168.1.1`  
-
 ![gambar3.png](images/gambar3.png)
-
----
-
-### 💻 PC2
+### PC2
 - IP Address: `192.168.3.2`  
 - Subnet Mask: `255.255.255.0`  
 - Default Gateway: `192.168.3.1`  
-
 ![gambar4.png](images/gambar4.png)
-
----
-
-### 📡 Router1
+### Router1
 ```bash
 interface fastEthernet 0/0
  ip address 192.168.1.1 255.255.255.0
@@ -57,3 +47,54 @@ interface fastEthernet 0/1
  no shutdown
 
 ip route 192.168.3.0 255.255.255.0 192.168.2.2
+
+```
+![gambar5.png](images/gambar5.png)
+### Router 2
+```bash
+interface fastEthernet 0/0
+ ip address 192.168.3.1 255.255.255.0
+ no shutdown
+
+interface fastEthernet 0/1
+ ip address 192.168.2.2 255.255.255.0
+ no shutdown
+
+ip route 192.168.1.0 255.255.255.0 192.168.2.1
+```
+![gambar6.png](images/gambar6.png)
+
+## 🔍 Pengujian Koneksi
+
+Setelah semua perangkat dikonfigurasi, lakukan pengujian dengan **ping** antar perangkat:
+### PC 1
+![gambar7.png](images/gambar7.png)
+
+### PC 2
+![gambar8.png](images/gambar8.png)
+
+
+Jika konfigurasi sudah benar, maka hasilnya akan **Reply** dari host tujuan ✅
+
+---
+
+## 📡 Hasil Topologi
+
+Berikut adalah hasil topologi jaringan yang dibuat di **Cisco Packet Tracer**:
+![gambar9.png](images/gambar9.png)
+
+
+---
+
+## ✨ Kesimpulan
+
+1. Topologi ini menghubungkan **PC1 ↔ Router1 ↔ Router2 ↔ PC2** dengan dua subnet berbeda.  
+2. Router berhasil menghubungkan antar subnet dengan konfigurasi **static routing**.  
+3. Pengujian ping menunjukkan konektivitas berjalan lancar.  
+
+---
+
+## 👨‍💻 Dibuat Oleh
+
+**Marthen Frikaldo**  
+_Project Cisco Packet Tracer – Topologi Gambar 2_
