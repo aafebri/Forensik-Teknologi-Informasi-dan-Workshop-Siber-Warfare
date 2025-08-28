@@ -1,7 +1,5 @@
 # 🌐 Cisco Packet Tracer - Static Routing Topology
-
 ![gambar 1.png](images/gambar%201.png)
-
 Proyek ini berisi simulasi jaringan menggunakan **Cisco Packet Tracer**, dengan topologi sederhana 2 Router dan 2 PC.  
 Tujuan utama adalah **mengenal static routing**, bagaimana dua jaringan berbeda bisa saling terhubung melalui router.
 
