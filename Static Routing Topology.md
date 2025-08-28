@@ -94,6 +94,5 @@ Berikut adalah hasil topologi jaringan yang dibuat di **Cisco Packet Tracer**:
 ---
 
 ##  Dibuat Oleh
-
-**Marthen Frikaldo**  
+  
 _Project Cisco Packet Tracer_
