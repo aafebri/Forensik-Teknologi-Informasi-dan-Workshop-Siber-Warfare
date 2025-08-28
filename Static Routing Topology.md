@@ -1,18 +1,18 @@
-# 🌐 Cisco Packet Tracer - Static Routing Topology
+#  Cisco Packet Tracer - Static Routing Topology
 ![gambar 1.png](images/gambar%201.png)
 Proyek ini berisi simulasi jaringan menggunakan **Cisco Packet Tracer**, dengan topologi sederhana 2 Router dan 2 PC.  
 Tujuan utama adalah **mengenal static routing**, bagaimana dua jaringan berbeda bisa saling terhubung melalui router.
 
 ---
 
-## 🖼️ Topologi Jaringan
+##  Topologi Jaringan
 - **PC1** terhubung ke Router1  
 - **Router1** terhubung ke Router2  
 - **Router2** terhubung ke PC2  
 ![gambar2.png](images/gambar2.png)
 ---
 
-## 📑 Spesifikasi Perangkat
+##  Spesifikasi Perangkat
 
 - **Router**: Cisco 2811 (2 unit)  
 - **PC**: End Device (2 unit)  
@@ -63,7 +63,7 @@ ip route 192.168.1.0 255.255.255.0 192.168.2.1
 ```
 ![gambar6.png](images/gambar6.png)
 
-## 🔍 Pengujian Koneksi
+##  Pengujian Koneksi
 
 Setelah semua perangkat dikonfigurasi, lakukan pengujian dengan **ping** antar perangkat:
 ### PC 1
@@ -77,7 +77,7 @@ Jika konfigurasi sudah benar, maka hasilnya akan **Reply** dari host tujuan ✅
 
 ---
 
-## 📡 Hasil Topologi
+##  Hasil Topologi
 
 Berikut adalah hasil topologi jaringan yang dibuat di **Cisco Packet Tracer**:
 ![gambar9.png](images/gambar9.png)
@@ -85,7 +85,7 @@ Berikut adalah hasil topologi jaringan yang dibuat di **Cisco Packet Tracer**:
 
 ---
 
-## ✨ Kesimpulan
+##  Kesimpulan
 
 1. Topologi ini menghubungkan **PC1 ↔ Router1 ↔ Router2 ↔ PC2** dengan dua subnet berbeda.  
 2. Router berhasil menghubungkan antar subnet dengan konfigurasi **static routing**.  
@@ -93,7 +93,7 @@ Berikut adalah hasil topologi jaringan yang dibuat di **Cisco Packet Tracer**:
 
 ---
 
-## 👨‍💻 Dibuat Oleh
+##  Dibuat Oleh
 
 **Marthen Frikaldo**  
-_Project Cisco Packet Tracer – Topologi Gambar 2_
+_Project Cisco Packet Tracer_
