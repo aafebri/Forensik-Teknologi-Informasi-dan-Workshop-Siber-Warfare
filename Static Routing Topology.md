@@ -93,6 +93,4 @@ Berikut adalah hasil topologi jaringan yang dibuat di **Cisco Packet Tracer**:
 
 ---
 
-##  Dibuat Oleh
-  
-_Project Cisco Packet Tracer_
+
