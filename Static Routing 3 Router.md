@@ -1,7 +1,7 @@
 
-# 🌐 Tutorial Konfigurasi Static Routing dengan 3 Router di Cisco Packet Tracer
+#  Konfigurasi Static Routing dengan 3 Router di Cisco Packet Tracer
 
-## 📌 1. Alat dan Bahan
+##  1. Alat 
 Sebelum memulai, siapkan perangkat dan kabel berikut di **Cisco Packet Tracer**:
 
 - **Router** : 3 unit (Router0, Router1, Router2)  
@@ -13,7 +13,7 @@ Sebelum memulai, siapkan perangkat dan kabel berikut di **Cisco Packet Tracer**:
 
 ---
 
-## 🖼️ 2. Topologi Jaringan  
+##  2. Topologi Jaringan  
 Topologi jaringan yang digunakan:
 
 ```
@@ -31,7 +31,7 @@ Topologi jaringan yang digunakan:
 </p>
 ---
 
-## ⚙️ 3. Pembagian IP Address
+##  3. Pembagian IP Address
 | Perangkat | Interface | IP Address   | Subnet Mask     | Gateway       |
 |-----------|-----------|--------------|-----------------|---------------|
 | Router0   | Fa0/0     | 192.168.1.100 | 255.255.255.0 | -             |
@@ -50,9 +50,9 @@ Topologi jaringan yang digunakan:
 
 ---
 
-## 🛠️ 4. Konfigurasi Router  
+##  4. Konfigurasi Router  
 
-### 🔹 Router0
+###  Router0
 ```bash
 Router> enable
 Router# configure terminal
@@ -78,7 +78,7 @@ Router(config)# ip route 192.168.3.0 255.255.255.0 10.10.10.2
 
 ```
 ```
-### 🔹 Router1
+###  Router1
 ```bash
 Router> enable
 Router# configure terminal
@@ -107,7 +107,7 @@ Router(config)# ip route 192.168.3.0 255.255.255.0 20.20.20.1
 </p>
 
 
-### 🔹 Router2
+###  Router2
 ```bash
 Router> enable
 Router# configure terminal
@@ -134,7 +134,7 @@ Router(config)# ip route 192.168.2.0 255.255.255.0 20.20.20.2
 ---
 
 ## 💻 5. Konfigurasi IP Address  
-📍 **Subnet 1 – 192.168.1.0/24**  
+ **Subnet 1 – 192.168.1.0/24**  
 | Perangkat | IP Address   | Subnet Mask     | Default Gateway |
 |-----------|--------------|-----------------|-----------------|
 | PC1       | 192.168.1.1  | 255.255.255.0   | 192.168.1.100   |
@@ -150,7 +150,7 @@ Router(config)# ip route 192.168.2.0 255.255.255.0 20.20.20.2
   <b>Gambar 10.</b> Konfigurasi IP PC 2
 </p>
 
-📍 **Subnet 2 – 192.168.2.0/24**  
+ **Subnet 2 – 192.168.2.0/24**  
 | Perangkat | IP Address   | Subnet Mask     | Default Gateway |
 |-----------|--------------|-----------------|-----------------|
 | PC3       | 192.168.2.1  | 255.255.255.0   | 192.168.2.100   |
@@ -166,7 +166,7 @@ Router(config)# ip route 192.168.2.0 255.255.255.0 20.20.20.2
   <b>Gambar 12.</b> Konfigurasi IP PC 4
 </p>
 
-📍 **Subnet 3 – 192.168.3.0/24**  
+ **Subnet 3 – 192.168.3.0/24**  
 | Perangkat | IP Address   | Subnet Mask     | Default Gateway |
 |-----------|--------------|-----------------|-----------------|
 | PC5       | 192.168.3.1  | 255.255.255.0   | 192.168.3.100   |
@@ -182,7 +182,7 @@ Router(config)# ip route 192.168.2.0 255.255.255.0 20.20.20.2
   <b>Gambar 14.</b> Konfigurasi IP PC 6
 </p>
 
-##  🔍 6. Pengujian Koneksi 
+##   6. Pengujian Koneksi 
 Setelah semua konfigurasi selesai:
  Coba **ping antar PC lintas jaringan**.  
 
@@ -222,10 +222,9 @@ Setelah semua konfigurasi selesai:
  ```
 ---
 
-## 📌 7. Kesimpulan
+##  7. Kesimpulan
 - Dengan konfigurasi **Static Routing**, setiap router diberi tahu secara manual jalur menuju jaringan lain.  
 - Topologi ini memungkinkan komunikasi antar **3 LAN berbeda** (192.168.1.0/24, 192.168.2.0/24, 192.168.3.0/24).  
 - Static Routing cocok untuk topologi kecil, tetapi pada jaringan besar lebih baik gunakan **Dynamic Routing (RIP, OSPF, EIGRP)**.  
 
-✍️️ **Author:** Dokumentasi Jaringan Cisco – *Static Routing Topology Haris Pambudi*
 
