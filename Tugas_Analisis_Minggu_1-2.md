@@ -159,7 +159,7 @@ Untuk setiap sistem: skenario, vektor, dan konsekuensi:
 * *Vektor:* Jamming, spoofing GPS, compromise pada ground station SATCOM, supply-chain malware pada perangkat komunikasi.
 * *Konsekuensi strategis:* Kelemahan koordinasi tempur, blind-spot pada situasi taktis, peningkatan risiko kesalahan operasi, dan potensi eksploitasi oleh lawan selama krisis.
 
-#### Diagram Mermaid — Analisis Dampak Maritim
+#### Diagram Analisis Dampak Ancaman Siber Maritim
 ![Diagram3.png](/Diagram3.png)
 
 ---
