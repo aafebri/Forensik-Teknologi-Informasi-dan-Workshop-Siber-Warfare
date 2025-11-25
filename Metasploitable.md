@@ -1,22 +1,22 @@
-# 🔍 Laporan Hasil Scan Nmap – Metasploitable2
+#  Laporan Hasil Scan Nmap – Metasploitable 2
 
 Repository ini berisi dokumentasi hasil scanning Nmap pada host 192.168.100.10.
 
 ---
 
-## 🖼️ Screenshot Hasil Scan
+##  Screenshot Hasil Scan
 
-### 📌 Screenshot 1
+###  Screenshot 1
 <img src="gambar 1.png" width="800">
 
 ---
 
-### 📌 Screenshot 2
+###  Screenshot 2
 <img src="gambar 2.png" width="800">
 
 ---
 
-### 📌 Screenshot 3
+###  Screenshot 3
 <img src="gambar 3.png" width="800">
 
 ---
@@ -24,12 +24,12 @@ Repository ini berisi dokumentasi hasil scanning Nmap pada host 192.168.100.10.
 
 ---
 
-# 📌 Command Nmap
+#  Command Nmap
 
 
 ---
 
-# 📊 Tabel Hasil Scan Port
+#  Tabel Hasil Scan Port
 
 | Port | Status | Deskripsi |
 |------|--------|-----------|
@@ -60,33 +60,33 @@ Repository ini berisi dokumentasi hasil scanning Nmap pada host 192.168.100.10.
 
 ---
 
-# 📘 Penjelasan Lengkap Hasil Scan Nmap
+#  Penjelasan Lengkap Hasil Scan Nmap
 
 Di bawah ini adalah penjelasan lengkap untuk setiap port dan layanan yang ditemukan pada host **192.168.100.10** menggunakan Nmap.
 
 ---
 
-## 🔹 Port 21 – FTP (vsftpd 2.3.4)
+##  Port 21 – FTP (vsftpd 2.3.4)
 Layanan FTP berjalan menggunakan **vsftpd 2.3.4**.  
 Ditemukan bahwa server mengizinkan **anonymous login**, yang merupakan risiko keamanan tinggi.  
 Versi ini juga diketahui memiliki *backdoor vulnerability* yang memungkinkan penyerang mendapatkan akses sistem.
 
 ---
 
-## 🔹 Port 22 – SSH (OpenSSH 4.7p1 Debian 8ubuntu1)
+##  Port 22 – SSH (OpenSSH 4.7p1 Debian 8ubuntu1)
 SSH aktif dengan versi yang cukup lama.  
 Fingerprint RSA dan DSA terdeteksi, menunjukkan penggunaan algoritma lama yang kurang aman.  
 Versi ini rentan terhadap beberapa CVE eksploitasi autentikasi.
 
 ---
 
-## 🔹 Port 23 – Telnet
+##  Port 23 – Telnet
 Telnet berjalan tanpa enkripsi sehingga semua data termasuk username dan password dapat disadap.  
 Layanan ini sangat tidak aman dan tidak boleh digunakan pada sistem produksi.
 
 ---
 
-## 🔹 Port 25 – SMTP (Postfix smtpd)
+##  Port 25 – SMTP (Postfix smtpd)
 SMTP memungkinkan email relay.  
 Server mendukung fitur seperti:
 - VRFY → untuk enumerasi user
@@ -96,7 +96,7 @@ Terdapat sertifikat internal: `ubuntu804-base.localdomain`.
 
 ---
 
-## 🔹 Port 53 – DNS (ISC Bind 9.4.2)
+##  Port 53 – DNS (ISC Bind 9.4.2)
 DNS server menggunakan Bind 9.4.2.  
 Versi ini memiliki banyak kelemahan historis seperti:
 - DNS cache poisoning
@@ -104,7 +104,7 @@ Versi ini memiliki banyak kelemahan historis seperti:
 
 ---
 
-## 🔹 Port 80 – HTTP (Apache 2.2.8)
+##  Port 80 – HTTP (Apache 2.2.8)
 Layanan web menggunakan Apache 2.2.8.  
 Teridentifikasi halaman default Metasploitable2.  
 Versi Apache ini sangat rentan terhadap:
@@ -114,13 +114,13 @@ Versi Apache ini sangat rentan terhadap:
 
 ---
 
-## 🔹 Port 111 – RPCBind
+##  Port 111 – RPCBind
 Digunakan untuk pemetaan RPC service.  
 Sering menjadi pintu serangan exploit terhadap NFS dan RServices.
 
 ---
 
-## 🔹 Port 139 dan 445 – SMB (Samba 3.0.20)
+##  Port 139 dan 445 – SMB (Samba 3.0.20)
 SMB berjalan menggunakan Samba 3.0.20 dengan banyak kelemahan:
 
 - NetBIOS vulnerability
@@ -130,7 +130,7 @@ SMB berjalan menggunakan Samba 3.0.20 dengan banyak kelemahan:
 
 ---
 
-## 🔹 Port 512 / 513 / 514 – RServices (rexec, rlogin, rsh)
+##  Port 512 / 513 / 514 – RServices (rexec, rlogin, rsh)
 Ketiga layanan ini sangat berbahaya karena:
 
 - Tidak menggunakan enkripsi  
@@ -139,13 +139,13 @@ Ketiga layanan ini sangat berbahaya karena:
 
 ---
 
-## 🔹 Port 1099 – Java RMI
+##  Port 1099 – Java RMI
 Java RMI Registry memungkinkan eksekusi jarak jauh jika tidak dilindungi.  
 Rentan terhadap exploit **Remote Code Execution (RCE)**.
 
 ---
 
-## 🔹 Port 2049 – NFS (rpc.nfsd)
+##  Port 2049 – NFS (rpc.nfsd)
 NFS berbagi file system antar host.  
 Jika tidak dikonfigurasi dengan baik, penyerang dapat:
 - Melakukan mount direktori tanpa autentikasi
@@ -153,13 +153,13 @@ Jika tidak dikonfigurasi dengan baik, penyerang dapat:
 
 ---
 
-## 🔹 Port 2121 – ProFTPD 1.3.1
+##  Port 2121 – ProFTPD 1.3.1
 ProFTPD versi ini memiliki beberapa celah RCE dan backdoor.  
 Sering menjadi target eksploitasi.
 
 ---
 
-## 🔹 Port 3306 – MySQL 5.0.51a
+##  Port 3306 – MySQL 5.0.51a
 MySQL menggunakan kredensial default:
 - username: **root**
 - password: **(kosong)**
@@ -168,24 +168,24 @@ Ini sangat berbahaya karena memberi akses penuh database kepada siapa pun.
 
 ---
 
-## 🔹 Port 3632 – distccd v1 (GNU)
+##  Port 3632 – distccd v1 (GNU)
 distccd sering dieksploitasi menggunakan serangan RCE.  
 Tool ini berjalan tanpa autentikasi sehingga mudah diambil alih.
 
 ---
 
-## 🔹 Port 5432 – PostgreSQL 8.3.x
+##  Port 5432 – PostgreSQL 8.3.x
 PostgreSQL versi lama yang rentan terhadap brute-force dan privilege escalation.
 
 ---
 
-## 🔹 Port 5900 – VNC (protocol 3.3)
+##  Port 5900 – VNC (protocol 3.3)
 VNC tidak mengenkripsi traffic sehingga dapat disadap.  
 Brute-force terhadap password juga mudah dilakukan.
 
 ---
 
-## 🔹 Port 6000 – X11
+##  Port 6000 – X11
 X11 sangat berbahaya jika terbuka ke publik.  
 Penyerang dapat:
 - Mengambil screenshot
@@ -194,19 +194,19 @@ Penyerang dapat:
 
 ---
 
-## 🔹 Port 6667 – UnrealIRCd (backdoor)
+##  Port 6667 – UnrealIRCd (backdoor)
 Versi UnrealIRCd yang ditemukan memiliki **backdoor bawaan** yang memungkinkan penyerang mengeksekusi perintah jarak jauh (RCE).  
 Ini salah satu layanan paling kritis di Metasploitable2.
 
 ---
 
-## 🔹 Port 7001 – Apache JServ
+##  Port 7001 – Apache JServ
 Digunakan untuk protokol Java lama.  
 Rentan terhadap directory traversal dan file disclosure.
 
 ---
 
-## 🔹 Port 8009 – Apache Tomcat AJP13
+##  Port 8009 – Apache Tomcat AJP13
 AJP13 sering menjadi target eksploit karena konfigurasi default Tomcat yang tidak aman.  
 Dapat digunakan untuk:
 - File inclusion
@@ -215,14 +215,14 @@ Dapat digunakan untuk:
 
 ---
 
-## 🔹 Port 8180 – Apache Tomcat/Coyote JSP Engine 1.1
+##  Port 8180 – Apache Tomcat/Coyote JSP Engine 1.1
 Tomcat versi ini memiliki celah seperti:
 - Weak admin password
 - Upload webshell melalui Tomcat Manager
 
 ---
 
-# 📌 Ringkasan Tingkat Kerentanan
+#  Ringkasan Tingkat Kerentanan
 Host ini (Metasploitable2) secara keseluruhan sangat rentan karena:
 
 - Banyak layanan lama dan tidak di-update  
