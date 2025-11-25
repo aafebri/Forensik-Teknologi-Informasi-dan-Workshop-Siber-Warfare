@@ -17,7 +17,7 @@ Repository ini berisi dokumentasi hasil scanning Nmap pada host 192.168.100.10.
 ---
 
 ### 📌 Screenshot 3
-<img src="gambar/gambar 3.png" width="800">
+<img src="gambar 3.png" width="800">
 
 ---
 
